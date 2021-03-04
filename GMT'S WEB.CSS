@@ -327,45 +327,6 @@ WRAP2
 
 ----------------------------------------*/
 
-.item3 .txt{
-    background-color: rgb(180, 0, 0,.6);
-    box-sizing: border-box;
-    position: relative;
-    z-index: 1;
-}
-
-.item3 h1{
-    text-align: center;
-    font-size: 40px;
-    padding-bottom: 5px;
-}
-
-.item3 .pic{
-    transform:scale(1,1);
-    overflow:hidden;
-}
-
-.item3 img{
-    width: 100%;
-    height: 100%;
-    vertical-align: middle;
-    transition: all .5s 0s ease
-}
-
-.item3:hover img{
-    transform:scale(1.15,1.15);
-}
-
-.item3 > :first-child{
-    margin-right: -20%;
-}
-
-/*----------------------------------------
-
- WRAP3
-
-----------------------------------------*/
-
 .wrap2{
     width: 100%;
     display: flex;
@@ -425,6 +386,44 @@ WRAP2
 
 .item2:hover img{
     transform:scale(1.15,1.15);
+}
+
+/*----------------------------------------
+
+ WRAP3
+
+----------------------------------------*/
+
+.item3 .txt{
+    background-color: rgb(180, 0, 0,.6);
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+}
+
+.item3 h1{
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.item3 .pic{
+    transform:scale(1,1);
+    overflow:hidden;
+}
+
+.item3 img{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    transition: all .5s 0s ease
+}
+
+.item3:hover img{
+    transform:scale(1.15,1.15);
+}
+
+.item3 > :first-child{
+    margin-right: -20%;
 }
 
 /*----------------------------------------
@@ -503,6 +502,20 @@ WRAP2
 .item4 .txt .btn:hover{
     background-color: #f00;
     color: #fff;
+}
+
+/*----------------------------------------
+
+WRAP5
+
+----------------------------------------*/
+
+.wrap5{
+    background: linear-gradient(-30deg,#b40000,#c73737);
+}
+
+.wrap5 h1{
+    margin-bottom: 5px;
 }
 
 /*----------------------------------------
@@ -792,6 +805,25 @@ MEDIA SCREEN
     ----------------------------------------*/
 
     .wrap2{
+        margin: 0 auto;
+    }
+
+    .item2{
+        width: 50%;
+        height: 50%;
+    }
+
+    .item2 h1{
+        font-size: 18px;
+    }
+
+    /*----------------------------------------
+
+    WRAP3
+
+    ----------------------------------------*/
+
+    .wrap3{
         width: 100%;
     }
 
@@ -807,9 +839,13 @@ MEDIA SCREEN
         height: 10%;
         padding: 10px 5px;
     }
+
+    .item3 h1{
+    font-size: 30px;
+    }
     
     .item3 .pic{
-        width: 800px;
+        width: 300px;
     }
 
     .item3 .pic img{
@@ -817,31 +853,12 @@ MEDIA SCREEN
         vertical-align: middle;
     }
 
-    .wrap2 :nth-child(1){
+    .wrap3 :nth-child(1){
         margin-top: 0;
     }
 
-    .wrap2 :nth-child(4){
-        margin-bottom: 0;
-    }
-
-    /*----------------------------------------
-
-    WRAP3
-
-    ----------------------------------------*/
-
-    .wrap3{
-        margin: 0 auto;
-    }
-
-    .item2{
-        width: 50%;
-        height: 50%;
-    }
-
-    .item2 h1{
-        font-size: 18px;
+    .wrap3 :nth-child(4){
+        margin-bottom: 50px;
     }
 
     /*----------------------------------------
@@ -861,6 +878,32 @@ MEDIA SCREEN
 
     #nth div:nth-child(1){
         order: 2;
+    }
+
+    /*----------------------------------------
+
+    WRAP5
+
+    ----------------------------------------*/
+
+    .wrap5{
+        width: 100%;
+    }
+
+    .wrap5 .item{
+        margin: auto;
+    }
+
+    .wrap5 .item img{
+        width: 100%;
+    }
+
+    .wrap5 .txt{
+        padding: 10px;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
     }
 
     /*----------------------------------------
@@ -1069,11 +1112,11 @@ MEDIA SCREEN
 
     /*----------------------------------------
 
-    WRAP2
+    WRAP3
 
     ----------------------------------------*/
 
-    .wrap2{
+    .wrap3{
         width: 80%;
         margin: auto;
     }
@@ -1092,7 +1135,7 @@ MEDIA SCREEN
     }
 
     .item3 h1{
-        font-size: 100px;
+        font-size: 80px;
         position: absolute;
         top: 15px;
         left: 50px;
@@ -1105,6 +1148,33 @@ MEDIA SCREEN
     
     .item3 > :first-child{
         margin-right: -10%;
+    }
+
+    /*----------------------------------------
+
+    WRAP5
+
+    ----------------------------------------*/
+
+    .wrap5{
+        display: flex;
+    }
+
+    .wrap5 .item{
+        width: 50%;
+    }
+
+    .wrap5 .item img{
+        width: 100%;
+    }
+
+    .wrap5 .pic,
+    .wrap5 .txt{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 20px;
+        text-align: center;
     }
 
     /*----------------------------------------
