@@ -504,6 +504,11 @@ WRAP2
     color: #fff;
 }
 
+#type{
+    background-color: rgba(255, 255, 255, 0);
+    border: 0px;
+}
+
 /*----------------------------------------
 
 WRAP5
@@ -841,7 +846,7 @@ MEDIA SCREEN
     }
 
     .item3 h1{
-    font-size: 30px;
+        font-size: 30px;
     }
     
     .item3 .pic{
@@ -878,6 +883,10 @@ MEDIA SCREEN
 
     #nth div:nth-child(1){
         order: 2;
+    }
+
+    #type{
+        display: none;
     }
 
     /*----------------------------------------
